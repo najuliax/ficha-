@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ficha de Cadastro de Moradores</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Ficha de Cadastro de Moradores</h2>
+        <label for="tipo-morador">Tipo de Morador:</label>
+        <input type="radio" name="tipo-morador" value="proprietario"> Proprietário
+        <input type="radio" name="tipo-morador" value="inquilino"> Inquilino
+
+        <section class="dados-morador">
+            <h3>Dados do Morador</h3>
+            <label for="nome-completo">Nome Completo:</label>
+            <input type="text" id="nome-completo" placeholder="Digite o nome completo">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="Digite o CPF">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="Digite o telefone">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite o email">
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" placeholder="Digite o celular">
+        </section>
+
+        <section class="emergencia">
+            <h3>Em Caso de Emergência Procurar por:</h3>
+            <label for="nome-emergencia">Nome:</label>
+            <input type="text" id="nome-emergencia" placeholder="Nome em caso de emergência">
+            <label for="telefone-emergencia">Telefone:</label>
+            <input type="tel" id="telefone-emergencia" placeholder="Telefone em caso de emergência">
+        </section>
+
+        <section class="locatario">
+            <h3>Em Caso de Locatário Informar:</h3>
+            <label for="nome-proprietario">Nome do Proprietário:</label>
+            <input type="text" id="nome-proprietario" placeholder="Nome do Proprietário">
+            <label for="telefone-proprietario">Telefone do Proprietário:</label>
+            <input type="tel" id="telefone-proprietario" placeholder="Telefone do Proprietário">
+        </section>
+
+        <section class="demais-moradores">
+            <h3>Demais Moradores</h3>
+            <div class="morador">
+                <label for="nome-morador">Nome:</label>
+                <input type="text" id="nome-morador" placeholder="Nome">
+                <label for="rg-morador">RG:</label>
+                <input type="text" id="rg-morador" placeholder="RG">
+                <label for="parentesco-morador">Grau de Parentesco:</label>
+                <input type="text" id="parentesco-morador" placeholder="Grau de Parentesco">
+            </div>
+        </section>
+
+        <section class="funcionarios">
+            <h3>Funcionários da Unidade</h3>
+            <div class="funcionario">
+                <label for="nome-funcionario">Nome:</label>
+                <input type="text" id="nome-funcionario" placeholder="Nome">
+                <label for "rg-funcionario">RG:</label>
+                <input type="text" id="rg-funcionario" placeholder="RG">
+                <label for="cargo-funcionario">Cargo:</label>
+                <input type="text" id="cargo-funcionario" placeholder="Cargo">
+                <label for="expediente-funcionario">Expediente:</label>
+                <input type="text" id="expediente-funcionario" placeholder="Expediente">
+            </div>
+        </section>
+
+        <section class="veiculos">
+            <h3>Veículos da Unidade</h3>
+            <div class="veiculo">
+                <label for="marca-veiculo">Marca:</label>
+                <input type="text" id="marca-veiculo" placeholder="Marca">
+                <label for="modelo-veiculo">Modelo:</label>
+                <input type="text" id="modelo-veiculo" placeholder="Modelo">
+                <label for="cor-veiculo">Cor:</label>
+                <input type="text" id="cor-veiculo" placeholder="Cor">
+                <label for="placa-veiculo">Placa:</label>
+                <input type="text" id="placa-veiculo" placeholder="Placa">
+            </div>
+        </section>
+
+        <section class="animais">
+            <h3>Animais de Estimação</h3>
+            <div class="animal">
+                <label for="nome-animal">Nome:</label>
+                <input type="text" id="nome-animal" placeholder="Nome">
+                <label for="tipo-animal">Gato/Cachorro:</label>
+                <input type="text" id="tipo-animal" placeholder="Gato/Cachorro">
+                <label for="raca-animal">Raça:</label>
+                <input type="text" id="raca-animal" placeholder="Raça">
+                <label for="cor-animal">Cor:</label>
+                <input type="text" id="cor-animal" placeholder="Cor">
+            </div>
+        </section>
+
+        <section class="autorizacao">
+            <h3>Autorização de Uso de Dados</h3>
+            <label for="autorizacao-dados">Autorizo o uso dos meus dados para fins específicos:</label>
+            <input type="checkbox" id="autorizacao-dados" name="autorizacao-dados" value="autorizado">
+        </section>
+        
+        <button id="submit-button">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
